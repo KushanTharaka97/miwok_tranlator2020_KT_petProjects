@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openNumbersList(View view){
-        Intent i_Numbers=new Intent(this,NumbersActivity.class);
+        Intent i_Numbers = new Intent(this, NumbersActivity.class);
         startActivity(i_Numbers);
     }
 }
