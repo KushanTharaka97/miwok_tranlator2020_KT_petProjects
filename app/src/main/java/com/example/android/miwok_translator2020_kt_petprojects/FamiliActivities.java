@@ -9,6 +9,6 @@ public class FamiliActivities extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_famili_activities);
+        setContentView(R.layout.activity_family);
     }
 }
