@@ -41,13 +41,13 @@
         style="@style/CategoryStyle"
         android:background="@color/category_colors"
         android:text="@string/category_colors"
-        android:onClick="openColors"/>
+     />
 
     <TextView
         android:id="@+id/phrases"
         style="@style/CategoryStyle"
         android:background="@color/category_phrases"
         android:text="@string/category_phrases"
-        android:onClick="openPhrases"/>
+       />
 
 </LinearLayout>

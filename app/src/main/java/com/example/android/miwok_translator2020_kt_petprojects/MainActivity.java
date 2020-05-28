@@ -41,16 +41,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView colors = findViewById(R.id.colors);
+        colors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(view.getContext(), "Colors", Toast.LENGTH_SHORT).show();
+                Intent i_colors = new Intent(MainActivity.this, ColorsActivity.class);
+                startActivity(i_colors);
+            }
+        });
+
+        TextView phrases = findViewById(R.id.phrases);
+        phrases.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(view.getContext(), "Phrases", Toast.LENGTH_SHORT).show();
+                Intent i_phrases = new Intent(MainActivity.this, PhrasesActivity.class);
+                startActivity(i_phrases);
+            }
+        });
 
     }
 
-    public void openColors(View view) {
-        Intent i_colors = new Intent(this, ColorsActivity.class);
-        startActivity(i_colors);
-    }
 
-    public void openPhrases(View view) {
-        Intent i_phrases = new Intent(this, PhrasesActivity.class);
-        startActivity(i_phrases);
-    }
 }
