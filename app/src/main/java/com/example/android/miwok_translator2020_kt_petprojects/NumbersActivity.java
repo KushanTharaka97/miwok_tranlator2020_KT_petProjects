@@ -16,7 +16,6 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
-
         //creating arrayList
         ArrayList<String> words = new ArrayList<>();
         words.add(0, "One");
@@ -28,33 +27,23 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(6, "Seven");
         words.add(7, "Eight");
         words.add(8, "Nine");
-        words.add(9,"Ten");
-
-
+        words.add(9, "Ten");
 
         //Add a log in verbose to determine the process that ongoing
         //make a for loop to make looping and show Log message to this
-        for (int i=0;i<10;i++){
-            Log.i("Number Activity","Index "+i+" is: " + words.get(i));
+        for (int i = 0; i < 10; i++) {
+            Log.i("Number Activity", "Index " + i + " is: " + words.get(i));
         }
 
-
-
         //initializing the LinearLayoutView
-        LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
+        LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView);
         //while loop all show
         int index = 0;
-        while(index < 10) {
+        while (index < words.size()) {
             TextView wordView = new TextView(this);
             wordView.setText(words.get(index));
             rootView.addView(wordView);
-            index = index+1;
-
+            index = index + 1;
         }
-
-
-
-
-
     }
 }
