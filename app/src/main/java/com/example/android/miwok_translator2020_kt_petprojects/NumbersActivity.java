@@ -42,13 +42,28 @@ public class NumbersActivity extends AppCompatActivity {
 
         //initializing the LinearLayoutView
         LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
-        //creating textView object new
-        TextView wordView = new TextView(this);
-        wordView.setText(words.get(0));
-        //childView in the main LeanearLayout
-        rootView.addView(wordView);
+
 
         //----------------------------------------------------------------------------------------
+        int index = 0;
+        while(index < 10) {
+            TextView wordView = new TextView(this);
+            wordView.setText(words.get(index));
+            rootView.addView(wordView);
+            index = index+1;
+
+            TextView wordView2 = new TextView(this);
+            wordView.setText(words.get(index));
+            rootView.addView(wordView);
+            index = index+1;
+
+            TextView wordView3 = new TextView(this);
+            wordView.setText(words.get(index));
+            rootView.addView(wordView);
+            index = index+1;
+        }
+
+
 
 
 
