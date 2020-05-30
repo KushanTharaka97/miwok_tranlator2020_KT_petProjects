@@ -37,14 +37,12 @@ public class NumbersActivity extends AppCompatActivity {
         for (int i=0;i<10;i++){
             Log.i("Number Activity","Index "+i+" is: " + words.get(i));
         }
-      //  Log.i("NumbersActivity","Index 0 is: "+words.get(0));
+
 
 
         //initializing the LinearLayoutView
         LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
-
-
-        //----------------------------------------------------------------------------------------
+        //while loop all show
         int index = 0;
         while(index < 10) {
             TextView wordView = new TextView(this);
@@ -52,15 +50,6 @@ public class NumbersActivity extends AppCompatActivity {
             rootView.addView(wordView);
             index = index+1;
 
-            TextView wordView2 = new TextView(this);
-            wordView.setText(words.get(index));
-            rootView.addView(wordView);
-            index = index+1;
-
-            TextView wordView3 = new TextView(this);
-            wordView.setText(words.get(index));
-            rootView.addView(wordView);
-            index = index+1;
         }
 
 
