@@ -17,15 +17,19 @@ public class NumbersActivity extends AppCompatActivity {
 
         //creating arrayList
         ArrayList<String> words = new ArrayList<>();
-        words.add(0,"One");
-        words.add(1,"Two");
-        words.add(2,"Three");
-        words.add(3,"Four");
-        words.add(4,"Five");
-        words.add(5,"Six");
-        words.add(6,"Seven");
-        words.add(7,"Eight");
+        words.add(0, "One");
+        words.add(1, "Two");
+        words.add(2, "Three");
+        words.add(3, "Four");
+        words.add(4, "Five");
+        words.add(5, "Six");
+        words.add(6, "Seven");
+        words.add(7, "Eight");
+        words.add(8, "Nine");
         words.add(9,"Ten");
 
+
+        //Add a log in verbose to determine the process that ongoing
+        Log.v("NumbersActivity","Index 0 is: "+words.get(0));
     }
 }
