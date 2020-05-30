@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import java.util.ArrayList;
+
 public class NumbersActivity extends AppCompatActivity {
 
     @Override
@@ -12,33 +14,18 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
-        //creating new array for the English Numbers
-        String[] englishNumberWords = new String[10];
 
-        //Store English Numbers in englishNumberWords Array
-        englishNumberWords[0] = "One";
-        englishNumberWords[1] = "Two";
-        englishNumberWords[2] = "Three";
-        englishNumberWords[3] = "Four";
-        englishNumberWords[4] = "Five";
-        englishNumberWords[5] = "Six";
-        englishNumberWords[6] = "Seven";
-        englishNumberWords[7] = "Eight";
-        englishNumberWords[8] = "Nine";
-        englishNumberWords[9] = "Ten";
-
-        //debug || Log views verbose: just messages to pass in Logcat
-
-        Log.v("NumbersActivity","Number at index 0: " + englishNumberWords[0]);
-        Log.v("NumbersActivity","Number at index 1" + englishNumberWords[1]);
-        Log.v("NumbersActivity","Number at index 2: " + englishNumberWords[2]);
-        Log.v("NumbersActivity","Number at index 3" + englishNumberWords[3]);
-        Log.v("NumbersActivity","Number at index 4: " + englishNumberWords[4]);
-        Log.v("NumbersActivity","Number at index 5" + englishNumberWords[5]);
-        Log.v("NumbersActivity","Number at index 6: " + englishNumberWords[6]);
-        Log.v("NumbersActivity","Number at index 7" + englishNumberWords[7]);
-        Log.v("NumbersActivity","Number at index 8: " + englishNumberWords[8]);
-        Log.v("NumbersActivity","Number at index 9" + englishNumberWords[9]);
+        //creating arrayList
+        ArrayList<String> words = new ArrayList<>();
+        words.add(0,"One");
+        words.add(1,"Two");
+        words.add(2,"Three");
+        words.add(3,"Four");
+        words.add(4,"Five");
+        words.add(5,"Six");
+        words.add(6,"Seven");
+        words.add(7,"Eight");
+        words.add(9,"Ten");
 
     }
 }
