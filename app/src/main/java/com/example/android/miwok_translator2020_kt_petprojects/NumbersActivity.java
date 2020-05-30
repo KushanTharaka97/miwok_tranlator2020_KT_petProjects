@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -36,5 +38,19 @@ public class NumbersActivity extends AppCompatActivity {
             Log.i("Number Activity","Index "+i+" is: " + words.get(i));
         }
       //  Log.i("NumbersActivity","Index 0 is: "+words.get(0));
+
+
+        //initializing the LinearLayoutView
+        LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
+        //creating textView object new
+        TextView wordView = new TextView(this);
+        wordView.setText(words.get(0));
+        //childView in the main LeanearLayout
+        rootView.addView(wordView);
+
+        //----------------------------------------------------------------------------------------
+
+
+
     }
 }
