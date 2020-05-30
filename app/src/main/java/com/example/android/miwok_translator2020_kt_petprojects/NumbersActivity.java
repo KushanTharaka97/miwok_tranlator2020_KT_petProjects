@@ -30,6 +30,6 @@ public class NumbersActivity extends AppCompatActivity {
 
 
         //Add a log in verbose to determine the process that ongoing
-        Log.v("NumbersActivity","Index 0 is: "+words.get(0));
+        Log.i("NumbersActivity","Index 0 is: "+words.get(0));
     }
 }
