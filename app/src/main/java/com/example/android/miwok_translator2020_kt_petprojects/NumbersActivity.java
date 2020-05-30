@@ -29,7 +29,12 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(9,"Ten");
 
 
+
         //Add a log in verbose to determine the process that ongoing
-        Log.i("NumbersActivity","Index 0 is: "+words.get(0));
+        //make a for loop to make looping and show Log message to this
+        for (int i=0;i<10;i++){
+            Log.i("Number Activity","Index "+i+" is: " + words.get(i));
+        }
+      //  Log.i("NumbersActivity","Index 0 is: "+words.get(0));
     }
 }
