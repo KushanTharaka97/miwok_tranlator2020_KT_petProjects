@@ -1,0 +1,2 @@
+rootProject.name='miwok_Translator2020_KT_petProjects'
+include ':app'
