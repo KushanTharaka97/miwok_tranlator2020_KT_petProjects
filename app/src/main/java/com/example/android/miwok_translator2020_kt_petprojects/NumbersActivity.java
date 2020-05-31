@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -35,14 +37,11 @@ public class NumbersActivity extends AppCompatActivity {
             Log.i("Number Activity", "Index " + i + " is: " + words.get(i));
         }
 
-        //initializing the LinearLayoutView
-        LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView);
-        //while loop all show
-        for (int i = 0; i < words.size(); i++) {
-            TextView wordView = new TextView(this);
-            wordView.setText(words.get(i));
-            rootView.addView(wordView);
+        //created array ada[ter for recyclr view | memory optimization
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, words);
 
-        }
+        ListView listView = findViewById(R.id.listView);
+
+        listView.setAdapter(itemsAdapter);
     }
 }
