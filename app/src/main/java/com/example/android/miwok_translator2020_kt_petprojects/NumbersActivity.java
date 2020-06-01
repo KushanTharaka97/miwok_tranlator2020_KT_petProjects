@@ -19,9 +19,13 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_numbers);
 
         //creating arrayList
-        ArrayList<String> words = new ArrayList<>();
-        words.add(0, "One");
-        words.add(1, "Two");
+        ArrayList<Word> words = new ArrayList<Word>();
+        //words.add(0, "One");
+        Word w = new Word("lutti", "one");
+        words.add(w);
+
+
+    /*    words.add(1, "Two");
         words.add(2, "Three");
         words.add(3, "Four");
         words.add(4, "Five");
@@ -29,7 +33,7 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(6, "Seven");
         words.add(7, "Eight");
         words.add(8, "Nine");
-        words.add(9, "Ten");
+        words.add(9, "Ten");*/
 
         //Add a log in verbose to determine the process that ongoing
         //make a for loop to make looping and show Log message to this
