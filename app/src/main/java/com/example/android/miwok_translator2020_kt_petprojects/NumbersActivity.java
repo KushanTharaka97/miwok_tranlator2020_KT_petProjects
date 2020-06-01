@@ -44,7 +44,7 @@ public class NumbersActivity extends AppCompatActivity {
         //created array ada[ter for recyclr view | memory optimization
         ArrayAdapter<Word> itemsAdapter = new ArrayAdapter<Word>(this, R.layout.list_item , words);
 
-        ListView listView = findViewById(R.id.listView);
+        ListView listView = findViewById(R.id.list_item);
 
         listView.setAdapter(itemsAdapter);
     }
