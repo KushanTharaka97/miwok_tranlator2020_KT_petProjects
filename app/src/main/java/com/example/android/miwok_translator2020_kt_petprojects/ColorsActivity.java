@@ -3,6 +3,7 @@ package com.example.android.miwok_translator2020_kt_petprojects;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -28,5 +29,13 @@ public class ColorsActivity extends AppCompatActivity {
         numberList.add(new Word("white", "kelelli"));
         numberList.add(new Word("dusty yellow", "ṭopiisә"));
         numberList.add(new Word("mustard yellow", "chiwiiṭә"));
+
+        /*I have to assign a adapter to view this according to colourMiwok|colorDefault*/
+        WordAdapter numbersAdapter = new WordAdapter(this, numberList);
+
+        //initialize right list
+        ListView colorList = findViewById(R.id.colorsList);
+
+        colorList.setAdapter(numbersAdapter);
     }
 }
