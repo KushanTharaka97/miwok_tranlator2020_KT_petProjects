@@ -16,7 +16,7 @@ public class Word{
         return defaultTranslation;
     }
         //contructor
-    public Word(String miWokTranslation, String defaultTranslation) {
+    public Word(String defaultTranslation, String miWokTranslation) {
         this.miWokTranslation = miWokTranslation;
         this.defaultTranslation = defaultTranslation;
     }
