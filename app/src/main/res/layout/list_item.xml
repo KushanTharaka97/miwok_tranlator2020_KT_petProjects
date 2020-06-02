@@ -10,6 +10,7 @@
         android:id="@+id/miwok_txtView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         tools:text="lutti" />
 
     <TextView
