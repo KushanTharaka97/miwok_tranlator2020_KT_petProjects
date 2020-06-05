@@ -6,6 +6,11 @@
     android:padding="16dp"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"/>
+
     <TextView
         android:id="@+id/miwok_txtView"
         android:layout_width="match_parent"
