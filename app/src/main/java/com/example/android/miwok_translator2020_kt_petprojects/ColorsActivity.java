@@ -21,14 +21,14 @@ public class ColorsActivity extends AppCompatActivity {
 
         /*Now second step is store the list of Names in colours(these words will auto
         store in Word oject when array is running)*/
-        numberList.add(new Word("red", "weṭeṭṭi"));
-        numberList.add(new Word("green", "weṭeṭṭi"));
-        numberList.add(new Word("brown", "ṭakaakki"));
-        numberList.add(new Word("gray", "ṭopoppi"));
-        numberList.add(new Word("black", "kululli"));
-        numberList.add(new Word("white", "kelelli"));
-        numberList.add(new Word("dusty yellow", "ṭopiisә"));
-        numberList.add(new Word("mustard yellow", "chiwiiṭә"));
+        numberList.add(new Word("red", "weṭeṭṭi", R.drawable.color_red));
+        numberList.add(new Word("green", "weṭeṭṭi", R.drawable.color_green));
+        numberList.add(new Word("brown", "ṭakaakki", R.drawable.color_brown));
+        numberList.add(new Word("gray", "ṭopoppi", R.drawable.color_gray));
+        numberList.add(new Word("black", "kululli", R.drawable.color_black));
+        numberList.add(new Word("white", "kelelli",R.drawable.color_white ));
+        numberList.add(new Word("dusty yellow", "ṭopiisә",R.drawable.color_dusty_yellow));
+        numberList.add(new Word("mustard yellow", "chiwiiṭә",R.drawable.color_mustard_yellow));
 
         /*I have to assign a adapter to view this according to colourMiwok|colorDefault*/
         WordAdapter numbersAdapter = new WordAdapter(this, numberList);
