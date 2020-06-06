@@ -20,7 +20,8 @@
     android:layout_height="match_parent"
     android:background="@color/tan_background"
     android:orientation="vertical"
-    tools:context="com.example.android.miwok_translator2020_kt_petprojects.MainActivity">
+    tools:context="com.example.android.miwok_translator2020_kt_petprojects.MainActivity"
+    android:backgroundTint="#FFF7DA">
 
     <TextView
         android:id="@+id/numbers"
