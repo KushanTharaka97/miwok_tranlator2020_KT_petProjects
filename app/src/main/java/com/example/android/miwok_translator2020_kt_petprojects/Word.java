@@ -20,4 +20,10 @@ public class Word{
         this.miWokTranslation = miWokTranslation;
         this.defaultTranslation = defaultTranslation;
     }
+
+    public Word(String miWokTranslation, String defaultTranslation, int imageResourceId){
+        this.miWokTranslation = miWokTranslation;
+        this.defaultTranslation = defaultTranslation;
+        this.imageResourceId = imageResourceId;
+    }
 }
